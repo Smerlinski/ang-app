@@ -1,11 +1,15 @@
-<form>
-    <label>Email</label>
-    <input type="text" [(ngModel)]="form.email" name="email">
-    <label>Password</label>
-    <input type="text" [(ngModel)]="form.password" name="password">
-    <button (click)="onSubmit()">Signup</button>
-    <mat-form-field appearance="fill" class="color-black">
-        <mat-label class="color-black">Input</mat-label>
-        <input matInput type="text">
-    </mat-form-field>
+<form class="main">
+    <div>
+        <mat-form-field appearance="fill" color="primary" mat-focused>
+            <mat-label>Email</mat-label>
+            <input matInput type="text" [(ngModel)]="form.email" name="email">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" color="primary" mat-focused>
+            <mat-label>Password</mat-label>
+            <input matInput type="text" [(ngModel)]="form.password" name="password">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" (click)="onSubmit()">Signup</button>
+    </div>
 </form>
