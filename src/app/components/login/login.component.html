@@ -1,1 +1,15 @@
-<p>login works!</p>
+<form class="main">
+    <div>
+        <mat-form-field appearance="fill" color="primary" mat-focused>
+            <mat-label>Email</mat-label>
+            <input matInput type="text" [(ngModel)]="form.email" name="email">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill" color="primary" mat-focused>
+            <mat-label>Password</mat-label>
+            <input matInput type="text" [(ngModel)]="form.password" name="password">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" (click)="login()">Login</button>
+    </div>
+</form>

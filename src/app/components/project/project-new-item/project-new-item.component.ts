@@ -8,22 +8,8 @@ import { RegistrationService } from 'src/app/services/registration.service';
 })
 export class ProjectNewItemComponent implements OnInit {
 
-  form:any = {
-    email: null,
-    password: null
-  };
-
-  constructor(private regService: RegistrationService) { }
+  constructor() { }
 
   ngOnInit(): void {
-  }
-
-  onSubmit(): void {
-    const {email, password} = this.form;
-    this.regService.signup(email, password).subscribe({
-      next: data => {
-        console.log(data);
-      }
-    })
   }
 }
