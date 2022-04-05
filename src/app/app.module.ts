@@ -15,6 +15,8 @@ import { ProjectItemComponent } from './components/project/project-item/project-
 import { TaskComponent } from './components/task/task.component';
 import { TaskItemComponent } from './components/task/task-item/task-item.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { TaskNewItemComponent } from './components/task/task-new-item/task-new-item.component';
+import { ProjectNewItemComponent } from './components/project/project-new-item/project-new-item.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProfileComponent } from './components/profile/profile.component';
     ProjectItemComponent,
     TaskComponent,
     TaskItemComponent,
-    ProfileComponent
+    ProfileComponent,
+    TaskNewItemComponent,
+    ProjectNewItemComponent
   ],
   imports: [
     BrowserModule,
