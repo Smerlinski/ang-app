@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistrationService } from 'src/app/services/registration.service';
 
 @Component({
   selector: 'app-project-new-item',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectNewItemComponent implements OnInit {
 
-  constructor() { }
+  form:any = {
+    email: null,
+    password: null
+  };
+
+  constructor(private regService: RegistrationService) { }
 
   ngOnInit(): void {
   }
 
+  onSubmit(): void {
+    const {email, password} = this.form;
+    this.regService.signup(email, password).subscribe({
+      next: data => {
+        console.log(data);
+      }
+    })
+  }
 }

@@ -17,6 +17,10 @@ import { TaskItemComponent } from './components/task/task-item/task-item.compone
 import { ProfileComponent } from './components/profile/profile.component';
 import { TaskNewItemComponent } from './components/task/task-new-item/task-new-item.component';
 import { ProjectNewItemComponent } from './components/project/project-new-item/project-new-item.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { ProjectNewItemComponent } from './components/project/project-new-item/p
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
