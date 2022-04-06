@@ -14,4 +14,8 @@ export class MessageNewItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  send(): void {
+    console.log(this.newMessage);
+    this.newMessage = '';
+  }
 }

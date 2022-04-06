@@ -1,6 +1,6 @@
 <div class="sending">
     <input matInput type="text" [(ngModel)]="newMessage" name="newMessage">
-    <button mat-icon-button>
+    <button mat-icon-button (click)="send()">
         <mat-icon color="primary">send</mat-icon>
     </button>
 </div>
