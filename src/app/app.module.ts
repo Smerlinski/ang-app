@@ -21,6 +21,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MessagesComponent } from './components/messages/messages.component';
+import { MessageNewItemComponent } from './components/messages/message-new-item/message-new-item.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -34,7 +39,9 @@ import { MatInputModule } from '@angular/material/input';
     TaskItemComponent,
     ProfileComponent,
     TaskNewItemComponent,
-    ProjectNewItemComponent
+    ProjectNewItemComponent,
+    MessagesComponent,
+    MessageNewItemComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +53,9 @@ import { MatInputModule } from '@angular/material/input';
     FormsModule,
     HttpClientModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,21 @@
+<mat-grid-list cols="12" class="conta" rowHeight="fit">
+    <mat-grid-tile [colspan]=3 class="grid-tile" >
+        <div class="fullSize">
+        <mat-card routerLink="new" class="fullSize">
+            <mat-card-title>Username</mat-card-title>
+        </mat-card></div>
+        <mat-card routerLink="new" class="fullSize">
+            <mat-card-title>Username2</mat-card-title>
+        </mat-card>
+        <mat-card routerLink="new" class="fullSize">
+            <mat-card-title>Username3</mat-card-title>
+        </mat-card>
+        <mat-card routerLink="new" class="fullSize">
+            <mat-card-title>Username4</mat-card-title>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]=9>
+        <h4 class="mat-display-2">Messages</h4>
+        <router-outlet></router-outlet>
+    </mat-grid-tile>
+</mat-grid-list>
