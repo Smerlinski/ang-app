@@ -1,13 +1,7 @@
 .conta {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    align-self: center;
-    align-content: center;
     height: 100%;
 }
-
-.fullSize {
-    width: 90%;
+.internalMatGrid{ width: 100%;}
+.card{
+    width: 100%;
 }
