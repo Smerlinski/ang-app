@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  form: any = {
+    firstName: null,
+    lastName: null,
+    email: null,
+  }
   constructor() { }
 
   ngOnInit(): void {
+    this.form.firstName="John",
+    this.form.lastName="Doe",
+    this.form.email="j.doe@test.com"
   }
 
 }

@@ -25,6 +25,7 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { MessageNewItemComponent } from './components/messages/message-new-item/message-new-item.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import {MatCardModule} from '@angular/material/card';
     MatFormFieldModule,
     MatInputModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
