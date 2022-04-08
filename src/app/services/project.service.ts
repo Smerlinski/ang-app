@@ -18,4 +18,8 @@ export class ProjectService {
     return this.http.get(PROJECTS_API, httpOptions)
   }
 
+  getProjectById(id: string): Observable<any> {
+    return this.http.get(PROJECTS_API + id)
+  }
+
 }

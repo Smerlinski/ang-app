@@ -3,8 +3,8 @@
     <button routerLink="newProject" mat-icon-button>
         <mat-icon>add</mat-icon>
     </button>
-    <div *ngFor="let project of projects">
-    <mat-card>
+    <div >
+    <mat-card *ngFor="let project of projects" style="width: 100%;" routerLink = "{{project.id}}">
         <p>
             {{project.name}}
         </p>
