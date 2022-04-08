@@ -1,8 +1,6 @@
 <div class="main">
     <h1 class="mat-display-2">Projects</h1>
-    <button routerLink="newProject" mat-icon-button>
-        <mat-icon>add</mat-icon>
-    </button>
+    
     <div >
     <mat-card *ngFor="let project of projects" style="width: 100%;" routerLink = "{{project.id}}">
         <p>
@@ -13,4 +11,7 @@
         </p>
     </mat-card>
     </div>
+    <button routerLink="newProject" mat-icon-button>
+        <mat-icon>add</mat-icon>
+    </button>
 </div>

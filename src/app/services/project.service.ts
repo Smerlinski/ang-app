@@ -19,7 +19,11 @@ export class ProjectService {
   }
 
   getProjectById(id: string): Observable<any> {
-    return this.http.get(PROJECTS_API + id)
+    return this.http.get(PROJECTS_API + id, httpOptions)
+  }
+
+  editProject(id: string, body: any[]): Observable<any> {
+    return this.http.put(PROJECTS_API + id + '/', body, httpOptions)
   }
 
 }

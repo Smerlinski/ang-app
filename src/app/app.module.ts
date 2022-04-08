@@ -26,6 +26,10 @@ import { MessageNewItemComponent } from './components/messages/message-new-item/
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { ProjectEditItemComponent } from './components/project-edit-item/project-edit-item.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 
 @NgModule({
@@ -42,7 +46,8 @@ import { MatMenuModule } from '@angular/material/menu';
     TaskNewItemComponent,
     ProjectNewItemComponent,
     MessagesComponent,
-    MessageNewItemComponent
+    MessageNewItemComponent,
+    ProjectEditItemComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +62,9 @@ import { MatMenuModule } from '@angular/material/menu';
     MatInputModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
