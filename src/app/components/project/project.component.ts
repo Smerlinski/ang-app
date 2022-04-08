@@ -8,12 +8,16 @@ import { ProjectService } from 'src/app/services/project.service';
 })
 export class ProjectComponent implements OnInit {
 
+  projects: any[] = [];
+
   constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
     this.projectService.getAllProjects().subscribe({
       next: data => {
-        console.log(data)
+        console.log(data);
+        this.projects = data;
+        console.log(this.projects);
       }
     })
   }

@@ -3,4 +3,14 @@
     <button routerLink="newProject" mat-icon-button>
         <mat-icon>add</mat-icon>
     </button>
+    <div *ngFor="let project of projects">
+    <mat-card>
+        <p>
+            {{project.name}}
+        </p>
+        <p>
+            {{project.author['email']}}
+        </p>
+    </mat-card>
+    </div>
 </div>
