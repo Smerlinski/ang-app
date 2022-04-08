@@ -29,7 +29,6 @@ export class ProjectEditItemComponent implements OnInit {
   ngOnInit(): void {
     this.projectService.getProjectById(this.id).subscribe({
       next: data => {
-        //console.log(data);
         this.form.author.email = data.author.email;
         this.form.author.id = data.author.id;
         this.form.name = data.name;
@@ -48,5 +47,4 @@ export class ProjectEditItemComponent implements OnInit {
       }
     });
   }
-
 }
