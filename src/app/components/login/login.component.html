@@ -1,15 +1,61 @@
-<form class="main container">
+<!-- <div class="container">
+<form >
     <div>
         <mat-form-field appearance="fill" color="primary" mat-focused>
             <mat-label>Email</mat-label>
             <input matInput type="text" [(ngModel)]="form.email" name="email">
         </mat-form-field>
         <br>
-        <mat-form-field appearance="fill" color="primary" mat-focused>
+        <mat-form-field appearance="fill" color="primary" mat-focused class="mb-3">
             <mat-label>Password</mat-label>
-            <input matInput type="text" [(ngModel)]="form.password" name="password">
+            <input matInput type="password" [(ngModel)]="form.password" name="password" class="form-control">
         </mat-form-field>
         <br>
         <button mat-raised-button color="primary" (click)="login()">Login</button>
+        <button type="button" class="btn btn-primary">Login</button>
     </div>
 </form>
+</div> -->
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
+<br>
+<br>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card-group mb-0">
+          <div class="card p-4">
+            <div class="card-body">
+              <h1>Login</h1>
+              <p class="text-muted">Sign In to your account</p>
+              <div class="input-group mb-3">
+                <span class="input-group-addon"><mat-icon>mail</mat-icon></span>
+                <input [(ngModel)]="form.email" type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="input-group mb-4">
+                <span class="input-group-addon"><mat-icon>lock</mat-icon></span>
+                <input [(ngModel)]="form.password" type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary px-4" (click)="login()">Login</button>
+                </div>
+                <div class="col-6 text-right">
+                  <button type="button" class="btn btn-link px-0">Forgot password?</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card text-white bg-primary py-5 d-md-down-none" style="width:44%">
+            <div class="card-body text-center">
+              <div>
+                <h2>Sign up</h2>
+                <p>If you don't have account, please create one using button below.</p>
+                <button type="button" class="btn btn-primary active mt-3" routerLink="/registration">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
