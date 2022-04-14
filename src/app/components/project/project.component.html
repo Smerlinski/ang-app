@@ -1,15 +1,23 @@
-<div class="main">
-    <h1 class="mat-display-2">Projects</h1>
-    
-    <div >
-    <mat-card *ngFor="let project of projects" style="width: 100%;" routerLink = "{{project.id}}">
-        <p>
-            {{project.name}}
-        </p>
-        <p>
-            {{project.author['email']}}
-        </p>
-    </mat-card>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12" style="text-align: center;">
+            <h1>Projects</h1>
+        </div>
     </div>
-    <button routerLink="newProject" type="button" class="btn btn-primary">Add</button>
+    <div>
+        <div class="row">
+            <div class="col-lg-12">
+                <mat-card *ngFor="let project of projects" style="width: 100%;" routerLink = "{{project.id}}">
+                    <p>
+                        {{project.name}}
+                    </p>
+                    <p>
+                        {{project.author['email']}}
+                    </p>
+                </mat-card>
+                <button routerLink="newProject" type="button" class="btn btn-primary">Add new</button>
+            </div>
+        </div>
+    </div>
 </div>
