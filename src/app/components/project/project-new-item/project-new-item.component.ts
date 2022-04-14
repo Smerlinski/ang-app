@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RegistrationService } from 'src/app/services/registration.service';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-project-new-item',
@@ -8,8 +8,27 @@ import { RegistrationService } from 'src/app/services/registration.service';
 })
 export class ProjectNewItemComponent implements OnInit {
 
-  constructor() { }
+  form: any = {
+    author: {
+      email: null,
+      id: null
+    },
+    name: null,
+    description: null,
+    end_date: null,
+    id: null,
+  }
+
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
+  }
+
+  add(): void {
+    this.projectService.addProject(this.form).subscribe({
+      next: data => {
+        console.log(data);
+      }
+    });
   }
 }

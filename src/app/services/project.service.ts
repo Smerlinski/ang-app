@@ -26,4 +26,8 @@ export class ProjectService {
     return this.http.put(PROJECTS_API + id + '/', body, httpOptions)
   }
 
+  addProject(body: any[]): Observable<any> {
+    return this.http.post(PROJECTS_API + '/', body, httpOptions)
+  }
+
 }
